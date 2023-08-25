@@ -34,7 +34,9 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 - [Python Tutor](https://pythontutor.com/)
 - [Online Python](https://www.online-python.com/)
 
-## Aufgaben
+## Übungen
+
+- [Übung 1](https://classroom.github.com/a/qO6T_1gF)
 
 ## Themen
 
