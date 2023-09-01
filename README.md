@@ -39,6 +39,7 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 ## Übungen
 
 - [Übung 1](https://classroom.github.com/a/qO6T_1gF)
+- [Übung 2](https://classroom.github.com/a/AWq59C0c)
 
 ## Themen
 
