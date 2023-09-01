@@ -1,3 +1,5 @@
+﻿<!-- -*- coding: utf-8 -*- -->
+
 # Python-Programmierung 2023-24
 
 ## Installation

@@ -1,3 +1,5 @@
+﻿<!-- -*- coding: utf-8 -*- -->
+
 # Arbeit mit Git
 
 `Git` ist ein leistungsfähiges Versionskontroll-System, welches besonders gut beim Programmieren eingesetzt werden kann.
