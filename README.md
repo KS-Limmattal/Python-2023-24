@@ -4,7 +4,7 @@
 
 ## Installation
 
-### MS Windows
+### Windows
 
 Empfohlen wird die portable Python-Installation [WinPython](https://github.com/winpython/winpython), Version 3.11.4. vom 15. Juli 2023 ([Download-Link](https://github.com/winpython/winpython/releases/download/6.4.20230625final/Winpython64-3.11.4.0.exe)). Diese enthält alle Module (inklusive math, cmath, numpy, pygame), die wir in diesem Semester benötigen werden. WinPython enthält die Python-Programmierumgebung Spyder, mit der wir arbeiten werden.
 
