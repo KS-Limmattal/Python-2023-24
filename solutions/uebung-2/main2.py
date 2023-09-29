@@ -28,4 +28,4 @@ for i in range(6, 0, -1):
                 print(f"({i},{j},{k})")
                 anzahl += 1
 
-print(f"Die Wahrscheinlichkeit für Augensumme {summe} beträgt p={anzahl}/216 ")
+print(f"Die Wahrscheinlichkeit für Augensumme {summe} beträgt p={anzahl}/216.")

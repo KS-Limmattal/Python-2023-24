@@ -6,7 +6,7 @@ Schreiben Sie ein Programm mit folgender Eingabe/Ausgabe
 Eingabe: Vorname, Nachname, Geschlecht (m/f)
 Ausgabe: "Guten Tag Herr ... ..." bzw. "Guten Tag Frau ... ..." (mit Vorname und Nachname)
 
-Verwenden Sie dabei f-string Formattierung bei der Ausgabe und benützen Sie dabei
+Verwenden Sie dabei f-string Formatierung bei der Ausgabe und benützen Sie dabei
 Variablen vorname, nachname, anrede von Typ str
 """
 

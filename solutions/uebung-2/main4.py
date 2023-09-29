@@ -15,7 +15,7 @@ um das Ergebnis zu erhalten.
 print("Denken Sie sich eine Zahl zwischen 1 und 1'000'000 aus. ")
 inp = ""
 minimum = 1
-maximum = 1000
+maximum = 1_000_000
 while maximum != minimum:
     tipp = (minimum + maximum) // 2          # Mittelwert abgerundet
     inp = input(f"Ist die Zahl grösser als {tipp} (j/n): ")

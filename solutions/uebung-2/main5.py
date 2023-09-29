@@ -17,6 +17,7 @@ while True:
     if eingabe == "Ende":
         break
     else:
+        eingabe = eingabe.replace(",", ".")
         note = float(eingabe)
         summe += note
         anzahl += 1
