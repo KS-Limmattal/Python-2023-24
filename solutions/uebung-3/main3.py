@@ -25,9 +25,6 @@ help(plt.imshow)
 
 N = 100
 
-import numpy as np
-import cmath as cm
-
 c = complex(input("Gib eine komplexe Zahl in der Form a+bj ein! z = "))
 z = 0
 dazu = True

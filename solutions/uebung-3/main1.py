@@ -20,4 +20,4 @@ while s > 0:
     s //= i  # Ganzzahl-Division
     e += s
 
-print(f"Die Eulersche Zahl auf N Nachkommastellen: e =  {e // 10**(N+extra)}.{(e - 2*10**(N+extra)) // 10**extra}")
+print(f"Die Eulersche Zahl auf {N} Nachkommastellen: e =  {e // 10**(N+extra)}.{(e - 2*10**(N+extra)) // 10**extra}")
