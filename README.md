@@ -43,6 +43,10 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 - [Übung 3](https://classroom.github.com/a/2ulNqvSd)
 - [Übung 4](https://classroom.github.com/a/3Irdd_CR)
 
+## Lernziele
+
+- [Lernziele zur Programmierprüfung I](Lernziele_Programmieren_I.pdf)
+
 ## Themen
 
 ### 1. Teil
@@ -72,5 +76,3 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 
 - Klassen
 - Überladung von Operatoren
-
-## Lernziele
