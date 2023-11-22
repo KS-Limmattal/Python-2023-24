@@ -22,6 +22,14 @@ f = 9.8
 r = e/f         # Gewöhnliche Division
 
 
+# Abkürzung von x = x + a etc.
+
+e += 2.1  # addiert 2.1 zu e                 (Verkürzung von e = e + 2.1)
+f -= 1.4  # subtrahiert 1.4 von f            (Verkürzung von f = f - 1.4)
+e *= 2    # multipliziert e mit 2            (Verkürzung von e = e * 2)
+f /= 3.5  # dividiert f durch 3.5            (Verkürzung von f = f / 2)
+a //= 3   # dividiert a durch 3 als Ganzzahl (Verkürzung von a = a/3)
+
 # Für kompliziertere Berechnungen braucht es das "math" Modul
 
 import math as m                  
