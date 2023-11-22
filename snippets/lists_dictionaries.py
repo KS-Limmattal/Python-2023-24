@@ -63,6 +63,7 @@ for d, f in deutsch_franz_dict.items():
 
 
 import numpy as np
+import random as rnd
 
 dir_dict = {
     "left": np.array([-1, 0]),
