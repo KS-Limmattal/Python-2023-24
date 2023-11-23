@@ -78,3 +78,12 @@ pos = pos + 3 * dir_dict["up"]  # Macht 3 Schritte nach oben
 keys = list(dir_dict.keys())
 dir = np.random.choice(keys)  # Zufallsauswahl eines Listenelements
 pos = pos + dir_dict[dir]  # macht einen Schritt in zufälliger Richtung
+
+# len() gibt die Länge von einem String (Anzahl zeichen) oder einer Liste (anzahl Einträge in der Liste) an
+name = "Roland"
+len(name)
+# gibt 6
+
+liste = ["loe", "bnd", "wnk", 2, 3]
+len(liste)
+# gibt 5
