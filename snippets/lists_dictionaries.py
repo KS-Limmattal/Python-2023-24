@@ -78,3 +78,8 @@ pos = pos + 3 * dir_dict["up"]  # Macht 3 Schritte nach oben
 keys = list(dir_dict.keys())
 dir = np.random.choice(keys)  # Zufallsauswahl eines Listenelements
 pos = pos + dir_dict[dir]  # macht einen Schritt in zufälliger Richtung
+
+# split: trennt strings beim Leerzeichen
+text = "Das ist ein Satz"
+text.split()
+# gibt ['Das', 'ist', 'ein', 'Satz']
