@@ -83,3 +83,12 @@ pos = pos + dir_dict[dir]  # macht einen Schritt in zufälliger Richtung
 text = "Das ist ein Satz"
 text.split()
 # gibt ['Das', 'ist', 'ein', 'Satz']
+
+# len() gibt die Länge von einem String (Anzahl zeichen) oder einer Liste (anzahl Einträge in der Liste) an
+name = "Roland"
+len(name)
+# gibt 6
+
+liste = ["loe", "bnd", "wnk", 2, 3]
+len(liste)
+# gibt 5
