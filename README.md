@@ -43,6 +43,10 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 - [Übung 3](https://classroom.github.com/a/2ulNqvSd)
 - [Übung 4](https://classroom.github.com/a/3Irdd_CR)
 
+## Prüfungen
+
+- [Prüfung 1](https://classroom.github.com/a/cneGWKdD)
+
 ## Lernziele
 
 - [Lernziele zur Programmierprüfung I](Lernziele_Programmieren_I.pdf)
