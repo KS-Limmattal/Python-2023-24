@@ -53,6 +53,7 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 ## Lernziele
 
 - [Lernziele zur Programmierprüfung I](Lernziele_Programmieren_I.pdf)
+- [Lernziele zur Programmierprüfung II](Lernziele_Programmieren_II.pdf)
 
 ## Themen
 
