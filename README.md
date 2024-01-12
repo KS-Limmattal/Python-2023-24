@@ -45,6 +45,20 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 - [Übung 5](https://classroom.github.com/a/XUQGUgHV)
 - [Übung 6](https://classroom.github.com/a/THIM3nIV)
 
+### Online-Ressourcen mit Übungen und Musterlösungen
+
+- [w3resource](https://www.w3resource.com/python-exercises/)
+  Diese Seite enthält zum Teil ziemlich gute Aufgaben, von einfach zu mittelschwer.
+  Es gibt auch Musterlösungen dazu. Leider sind die Anforderungen in der Aufgabenstellung
+  manchmal unklar formuliert oder (vermutlich in Einzelfällen) fehlerhaft und die Lösungen
+  sind oftmals etwas umständlich und manchmal etwas verwirrend.
+- [pynative](https://pynative.com/python-exercises-with-solutions/)
+  Diese Seiten enthält kleine Aufgaben, die mit ca. 3 Zeilen Code gelöst werden können. 
+  Bei den Musterlösungen werden zum Teil Alternativen gegeben. 
+- [w3schools](https://www.w3schools.com/python/exercise.asp)
+  Hier geht es um blosse Syntax-Einübung. Es müssen Lücken in kleinen Programmtexten
+  eingefüllt werden.
+
 ## Prüfungen
 
 - [Prüfung 1](https://classroom.github.com/a/cneGWKdD)
