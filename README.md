@@ -63,6 +63,7 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 
 - [Prüfung 1](https://classroom.github.com/a/cneGWKdD)
 - [Nachprüfung 1](https://classroom.github.com/a/LR60u2IA)
+- [Prüfung 2](https://classroom.github.com/a/y7E-OhqQ)
 
 ## Lernziele
 
