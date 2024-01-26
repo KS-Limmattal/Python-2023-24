@@ -17,17 +17,17 @@ Der Vorteil von Klassen liegt darin, dass Variablen und Funktionen, die zum selb
 """
 
 
-class Mensch:
+class Person:
     """
-    Diese Klasse realisiert einen Bauplan für einen Menschen
-    Die Eigenschaften eines Menschen sollen der Vorname, Nachname, und das Alter (in Jahren) sein
+    Diese Klasse realisiert einen Bauplan für eine Person
+    Die Eigenschaften einer Person sollen der Vorname, Nachname, und das Alter (in Jahren) sein
     Die Methoden dieser Klasse sollen die Ausgabe des vollen Namens, eine Funktion zur Änderung des Nachnamens,
     sowie eine Funktion zur Inkrementierung (=Erhöhung um 1) des Alters sein.
     """
 
     def __init__(self, vorname, nachname, alter=0):
         """
-        Konstruktor (konstruiert einen konkreten Menschen, also eine Instanz der Klasse)
+        Konstruktor (konstruiert einen konkrete Person, also eine Instanz der Klasse)
 
         param vorname: der zugewiesene Vorname
         param nachname: der zugewiesene Nachname
@@ -39,7 +39,7 @@ class Mensch:
 
     def get_name(self):
         """
-        return: der komplette Name des Menschen
+        return: der komplette Name der Person
         """
         return f"{self.vorname} {self.nachname}"
 
@@ -50,10 +50,10 @@ class Mensch:
         self.alter += 1
 
 
-# Instanzierung von Menschen (Objekten der Klasse Mensch) erfolgen nach der Definiton der Klasse
+# Instanzierung von Personen (Objekten der Klasse Person) erfolgen nach der Definiton der Klasse
 
-ex_praesident = Mensch("Donald", "Trump", 77)
-baby = Mensch("Laura", "Müller")
+ex_praesident = Person("Donald", "Trump", 77)
+baby = Person("Laura", "Müller")
 
 # Nun können diese Instanzen, ihre Eigenschaften und Methoden verwendet werden
 
