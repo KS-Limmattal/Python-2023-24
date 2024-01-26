@@ -44,6 +44,7 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 - [Übung 4](https://classroom.github.com/a/3Irdd_CR)
 - [Übung 5](https://classroom.github.com/a/XUQGUgHV)
 - [Übung 6](https://classroom.github.com/a/THIM3nIV)
+- [Übung 7](https://classroom.github.com/a/8Eaas1g6)
 
 ### Online-Ressourcen mit Übungen und Musterlösungen
 
