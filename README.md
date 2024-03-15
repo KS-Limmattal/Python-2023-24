@@ -45,6 +45,7 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 - [Übung 5](https://classroom.github.com/a/XUQGUgHV)
 - [Übung 6](https://classroom.github.com/a/THIM3nIV)
 - [Übung 7](https://classroom.github.com/a/8Eaas1g6)
+- [Übung zur Vererbung](https://classroom.github.com/a/6sZP9s0H)
 
 ### Online-Ressourcen mit Übungen und Musterlösungen
 
@@ -101,3 +102,8 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 
 - Klassen
 - Überladung von Operatoren
+
+## 6. Teil
+
+- Zusammenarbeit in Teams
+- Vererbung
