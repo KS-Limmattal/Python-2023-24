@@ -184,7 +184,7 @@ Inhalte von add_feature
 
 auf. Hier müssen diese Änderungen manuell zusammengeführt werden (evtl. ist die obere Variante oder die untere Variante vorzuziehen oder es braucht eine Mischung der beiden Varianten) und die Spezialzeichen `<<<<<<<`, `=========` und `>>>>>>>` entfernt werden.
 
-Dann kann (nach dem Speichern der Datei) durch Befolgung der Anweisungen (in der Regel `git rebase --continue`) die zusammengeführte Version durchgesetzt werden.
+Dann kann (nach dem Speichern der Datei) durch Befolgung der Anweisungen (in der Regel `git add <filename>` gefolgt von `git rebase --continue`) die zusammengeführte Version durchgesetzt werden.
 
 Sind alle Konflikte gelöst und das Rebase abgeschlossen, muss wiederum mit
 
