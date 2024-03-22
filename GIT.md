@@ -18,7 +18,7 @@ die im folgenden [Video](https://www.youtube.com/watch?v=kHkQnuYzwoo) erklärt w
 
 Die Projekt-Geschichte lässt sich mittels
 
-```term
+```shell
 git log
 ```
 
@@ -32,7 +32,7 @@ Es ist daraus also ersichtlich, wer wann welche Commits gemacht hat und was dami
 
 Der aktuelle Zustand des Git Repositories lässt sich mittels
 
-```term
+```shell
 git status
 ```
 
@@ -41,7 +41,7 @@ anzeigen. Hier wird ersichtlich, ob es geänderte Dateien gibt, ob diese bereits
 
 Zum Beispiel zeigt:
 
-```term
+```shell
 Auf Branch main
 Ihr Branch ist auf demselben Stand wie 'origin/main'.
 
@@ -68,7 +68,7 @@ fehlt die Berechtigung dazu.
 
 Um etwa das `Python-2023-24` repository zu klonen, tippe in der Konsole, in welcher du `git` ausführen kannst:
 
-```term
+```shell
 git clone https://github.com/KS-Limmattal/Python-2023-24.git
 ```
 
@@ -76,7 +76,7 @@ git clone https://github.com/KS-Limmattal/Python-2023-24.git
 
 Anstatt die neusten Code-Dateien auf Github im Web-Interface reinzukopieren und so zu veröffentlichen, lautet der Ablauf aus der Kommandozeile wie folgt:
 
-```term
+```shell
 git add <Dateiname(n)>
 git commit -m "Commit-Nachricht"
 git push
@@ -84,9 +84,112 @@ git push
 
 Dabei sollte im Zweifelsfall vorher mittels
 
-```term
+```shell
 git fetch
 git status
 ```
 
-überprüft werden, ob der aktuelle Zweig im lokalen Repository im selben Zustand wie das Online Repository ist.
+überprüft werden, ob der aktuelle Zweig im lokalen Repository im selben Zustand wie das online Repository ist. Ansonsten muss mittels
+
+```shell
+git pull
+```
+
+das lokale Repository mit den Änderungen im online Repository aktualisiert werden.
+
+## Arbeit mit verschiedenen Zweigen
+
+Der 'main' Branch repräsentiert den aktuellen Zustand mit allen akzeptierten Beiträgen
+der verschiedenen Mitwirkenden. Die Mitwirkenden arbeiten dabei für einzelne Beiträge auf eigenen Zweigen, z.B.
+
+- 'add-bad-guy-class' (ein neues Feature, welches eine Klasse 'bad-guy' in einem Spiel hinzufügt)
+- 'fix-velocity' (ein Bugfix, welcher die aktuell nicht befriedigend funktionierende Geschwindigkeit korrigiert)
+- 'update-readme' (ein Update des READMEs, um den aktuellen Projektstand zu beschrieben)
+
+### Abzweigen
+
+Um einen neuen Zweig (hier 'add-feature') vom Hauptzweig 'main' abzuzweigen, verwenden wir
+den Befehl
+
+```shell
+git checkout main
+git checkout -b add-feature
+```
+
+Die erste Zeile entfällt, wenn wir bereits auf dem 'main' Branch sind, was mit `git status`
+überprüft werden kann. Dabei ist zu beachten, dass der Wechsel `git checkout` des Zweiges 
+in der Regel nur dann möglich ist, wenn die aktuellen Änderungen commited, verworfen oder mit
+`git stash` zwischengespeichert (und damit auch verworfen) worden sind. Bei Ausführung von
+`git status` sollten also keine Änderungen (weder rot noch grün) aufgeführt sein.
+
+Der Zweig kann ebenfalls mit `git push` (oder `git push origin add-feature`) auf Github
+gepusht werden. 
+
+
+Soll zuerst noch der `main` Zweig mit den letzten Änderungen im online Repository aktualisiert werden, so sollte noch ein `git pull` dazwischengeschaltet werden:
+
+```shell
+git checkout main
+git pull
+git checkout -b add-feature
+```
+
+
+### Pull Requests
+
+Ist die Arbeit an dem Branch abgeschlossen (oder in fortgeschrittenem Stadium), kann man auf Github einen
+"Pull Request" (abgekürzt "PR") erstellen. Dazu muss im "Pull Requests" Reiter der grüne Knopf 
+"Compare & Pull Request" angeklickt werden, evtl. eine ausführlichere Beschreibung hinzugefügt
+werden und dann mit dem grünen Knopf "Create Pull Request" bestätigt werden.
+
+![Github Interface mit Pull Request](image.png)
+
+Nun ist es die Aufgabe eines anderen Team-Mitglieds, den Pull Request zu begutachten,
+Änderungen zu verlangen (welche immer noch mit `git add`, `git commit`, `git push` am Zweig angebracht werden können) und am Schluss den Pull Request in den aktuellen Zweig zu übernehmen (grüner Knopf "Rebase and Merge" oder "Squash and Merge" unten).
+Hauptunterschied:
+- Bei "Squash and Merge" werden die verschiedenen Commits, die im Beitrag enthalten sind,
+  zu einem einzigen zusammengeführt, was sinnvoll sein kann, wenn es sich im Wesentlichen um eine einzige Sache handelt, die im Beitrag gemacht wurde.
+- Bei Rebase and Merge werden die Commits nicht zusammengeführt.
+
+### Merge Konflikte und Rebase
+
+Bei Arbeit an verschiedenen Zweigen (ob alleine oder im Team) kommt es immer wieder vor, dass vor der Aufnahme von Änderungen eines Zweigs in den Hauptzweig (Merge des Pull Requests) ein anderer Zwei in den Hauptzweig integriert wird und es dadurch zu Konflikten kommt. Diese treten auf, wenn teils an den gleichen Code-Zeilen gearbeitet wurde. Solche Konflikte lassen sich wie folgt lösen:
+
+Angenommen der `add-feature` Zweig ist aktiv (überprüfe mit `git status`) und soll durch die in den `main` branch im online Repository aufgenommenen Änderungen aktualisiert werden.
+
+Dazu verwenden wir
+
+
+```shell
+git rebase origin/main
+```
+
+Wenn alles klappt, kann der aktualisierte Zweig nun mit
+```shell
+git push --force
+```
+
+ins online Repository gepusht werden.
+
+Treten Konflikte auf, so meldet dies git. An den konfliktbehafteten Stellen werden im Code Vermerke wie
+
+
+```shell
+<<<<<<< HEAD
+Inhalt von HEAD 
+=======
+Inhalte von add_feature
+>>>>>>> add_feature
+```
+
+auf. Hier müssen diese Änderungen manuell zusammengeführt werden (evtl. ist die obere Variante oder die untere Variante vorzuziehen oder es braucht eine Mischung der beiden Varianten) und die Spezialzeichen `<<<<<<<`, `=========` und `>>>>>>>` entfernt werden.
+
+Dann kann (nach dem Speichern der Datei) durch Befolgung der Anweisungen (in der Regel `git rebase --continue`) die zusammengeführte Version durchgesetzt werden.
+
+Sind alle Konflikte gelöst und das Rebase abgeschlossen, muss wiederum mit
+
+```shell
+git push --force
+```
+
+der Zweig aufs online Repository gepusht werden.
