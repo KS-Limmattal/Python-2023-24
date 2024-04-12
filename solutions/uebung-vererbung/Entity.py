@@ -13,3 +13,30 @@ Klasse "Entity" mit
                     so muss der Rückgabewert True sein, da mit "Up" das freie Feld mit Koordinaten (4, 6) erreicht würde.
                Hinweis: Auch die Grösse des Spielfelds ist zu beachten. Die Entität kann nicht über den Spielfeldrand hinausfahren.
 """
+
+class Entity:
+
+     dir_dict = {"Up": (0,-1), "Down": (0,1), "Left": (-1,0), "Right": (1,0)}
+
+     def __init__(self, x, y, dir):
+        self.x = x
+        self.y = y
+        self.dir = dir
+        
+     def can_move(self, playground):
+        dx, dy = self.dir_dict[self.dir]
+        new_x = self.x + dx
+        new_y = self.y + dy
+        max_x, max_y = playground.shape
+        return 0 <= new_x < max_x and 0 <= new_y < max_y and playground[new_x][new_y] != 1
+
+
+if __name__ == '__main__':
+    import numpy as np
+    entity = Entity(2,2, "Right")
+    playground = np.array([[1, 0, 0, 1, 0, 1],
+                           [1, 0, 0, 0, 0, 1],
+                           [0, 0, 0, 1, 0, 0],
+                           [1, 0, 0, 0, 0, 1]]
+                         ).T
+    print(entity.can_move(playground))
