@@ -1,6 +1,6 @@
 ﻿# Autoren
 
-Bei diesem Projekt wirken 3 Personen mit, nämlich Anna, Bert und C.
+Bei diesem Projekt wirken 3 Personen mit, nämlich Anna, Bert und Céline.
 
 # Aufgabenaufteilung:
 
@@ -8,4 +8,4 @@ Hier sind die Aufgaben, welche die einzelnen Mitwirkenden übernehmen, kurz besc
 
 - Anna: Schreibt Entity Klasse
 - Bert: Schreibt Ghost Klasse
-- C:
+- Céline: Schreibt Pacman Klasse
