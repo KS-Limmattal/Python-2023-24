@@ -36,6 +36,10 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 - [Python Tutor](https://pythontutor.com/)
 - [Online Python](https://www.online-python.com/)
 
+## Programmierprojekt
+
+[Projekt](https://classroom.github.com/a/3UwXo-P_)
+
 ## Übungen
 
 - [Übung 1](https://classroom.github.com/a/qO6T_1gF)
@@ -107,3 +111,4 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 
 - Zusammenarbeit in Teams
 - Vererbung
+- Spiele mit pygame
