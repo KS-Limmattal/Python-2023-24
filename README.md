@@ -50,6 +50,7 @@ Anstatt einer lokalen Python-Installation lassen sich für einfache Zwecke auch 
 - [Übung 6](https://classroom.github.com/a/THIM3nIV)
 - [Übung 7](https://classroom.github.com/a/8Eaas1g6)
 - [Übung zur Vererbung](https://classroom.github.com/a/6sZP9s0H)
+- [Super Mario Level 1](https://classroom.github.com/a/BkZ_FTv6)
 
 ### Online-Ressourcen mit Übungen und Musterlösungen
 
